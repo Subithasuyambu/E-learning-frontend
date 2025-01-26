@@ -1,0 +1,134 @@
+/* Overall page styles */
+.account-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #e9e4f0, #d3cce3); /* Gradient background */
+    font-family: 'Poppins', sans-serif; /* Modern font family */
+    animation: fadeIn 1s ease-in-out; /* Subtle fade-in animation */
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Profile card styling */
+.profile {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    width: 35%;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    /* Responsive design */
+    @media (max-width: 768px) {
+        padding: 20px;
+        width: 85%;
+    }
+}
+
+.profile:hover {
+    transform: scale(1.05); /* Hover scale effect */
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Decorative gradient border */
+.profile:before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(135deg, #8a4baf, #6a37a1, #ff5c5c, #ff2a2a);
+    z-index: 1;
+    filter: blur(50px);
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+}
+
+.profile:hover:before {
+    opacity: 0.7;
+}
+
+/* Profile header */
+.profile h2 {
+    color: #333;
+    font-size: 32px;
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 2;
+    font-weight: 600;
+}
+
+/* Profile info */
+.profile-info {
+    text-align: left;
+    margin-top: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.profile-info p {
+    margin-bottom: 12px;
+    font-size: 18px;
+    color: #555;
+}
+
+.profile-info p strong {
+    color: #8a4baf; /* Violet color for strong text */
+}
+
+/* Common button styles */
+.common-btn {
+    padding: 12px 20px;
+    background: linear-gradient(135deg, #8a4baf, #6a37a1); /* Violet gradient */
+    color: white;
+    border: none;
+    border-radius: 30px; /* Rounded pill-shaped buttons */
+    cursor: pointer;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    font-size: 16px;
+    margin: 10px 5px; /* Reduced margin for closer buttons */
+    display: inline-block;
+    width: 180px;
+}
+
+.common-btn:hover {
+    background: linear-gradient(135deg, #9b5ccf, #7b42b5); /* Slightly lighter hover effect */
+    transform: translateY(-3px); /* Lift effect */
+    box-shadow: 0px 8px 15px rgba(143, 78, 234, 0.4);
+}
+
+/* Specific styling for the Logout button */
+.common-btn.logout-btn {
+    background: linear-gradient(135deg, #ff5c5c, #ff2a2a); /* Red gradient for Logout */
+}
+
+.common-btn.logout-btn:hover {
+    background: linear-gradient(135deg, #ff7373, #ff4545); /* Lighter hover effect for Logout */
+}
+
+/* Icon animations */
+.common-btn svg {
+    margin-right: 8px;
+    transition: transform 0.3s ease;
+}
+
+.common-btn:hover svg {
+    transform: scale(1.2); /* Slight enlargement on hover */
+}

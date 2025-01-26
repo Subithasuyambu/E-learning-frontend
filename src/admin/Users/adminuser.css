@@ -1,0 +1,66 @@
+.users {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+.users h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Center the table */
+.users table {
+    width: auto;  /* Adjust table width */
+    margin: 0 auto;  /* This centers the table horizontally */
+    border-collapse: collapse;
+    background-color: #ffffff;
+}
+
+.users table th, .users table td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.users table th {
+    background-color: #4caf50;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.users table tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+.users table tbody tr:hover {
+    background-color: #f1f9f1;
+}
+
+.users table tbody td {
+    color: #333;
+}
+
+.common-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.common-btn:hover {
+    background-color: #0056b3;
+}
+
+.common-btn:active {
+    transform: scale(0.98);
+}

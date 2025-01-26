@@ -1,0 +1,111 @@
+.about {
+    padding: 80px 20px;
+    text-align: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, #f0e6f6, #d9bff3); /* Light violet to soft purple gradient */
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: center;
+
+    .about-content {
+        max-width: 900px;
+        margin: 0 auto;
+        background: rgba(255, 255, 255, 0.8); /* Glass-like background */
+        padding: 50px;
+        border-radius: 15px;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(10px);
+
+        h2 {
+            font-size: 36px;
+            color: #8a4baf; /* Violet heading */
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .intro {
+            font-size: 18px;
+            color: #4a4a4a;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+        .mission-vision {
+            display: flex;
+            gap: 20px;
+            justify-content: space-between;
+            margin-bottom: 40px;
+
+            @media (max-width: 768px) {
+                flex-direction: column;
+            }
+
+            .section {
+                flex: 1;
+                background: rgba(138, 75, 175, 0.1);
+                padding: 20px;
+                border-radius: 10px;
+
+                h3 {
+                    font-size: 22px;
+                    color: #8a4baf;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    font-size: 16px;
+                    color: #333;
+                    line-height: 1.6;
+                }
+            }
+        }
+
+        .core-values {
+            h3 {
+                font-size: 24px;
+                color: #8a4baf;
+                margin-bottom: 15px;
+            }
+
+            ul {
+                list-style: none;
+                padding: 0;
+
+                li {
+                    font-size: 16px;
+                    color: #333;
+                    line-height: 1.8;
+                    margin: 8px 0;
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+
+        .cta {
+            margin-top: 40px;
+
+            p {
+                font-size: 18px;
+                color: #4a4a4a;
+                margin-bottom: 20px;
+            }
+
+            button {
+                padding: 12px 24px;
+                background: linear-gradient(135deg, #8a4baf, #6a37a1); /* Violet gradient button */
+                color: white;
+                border: none;
+                border-radius: 8px;
+                cursor: pointer;
+                box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+                transition: all 0.3s ease;
+
+                &:hover {
+                    background: linear-gradient(135deg, #9b5ccf, #7b42b5); /* Slightly lighter hover effect */
+                    transform: scale(1.05);
+                }
+            }
+        }
+    }
+}

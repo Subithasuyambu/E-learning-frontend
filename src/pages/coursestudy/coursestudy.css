@@ -1,0 +1,119 @@
+.course-study-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(145deg, #f0f4f8, #ffffff); /* Light grey gradient */
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 30px auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #dfe3e8;
+  }
+  
+  .course-study-page:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  .course-study-page img {
+    border-radius: 12px;
+    margin-bottom: 15px;
+    max-width: 90%;
+    height: auto;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .course-study-page img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.05);
+  }
+  
+  .course-study-page h2 {
+    color: #333333; /* Dark grey */
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 10px 0;
+    text-align: center;
+    text-transform: capitalize;
+  }
+  
+  .course-study-page h4 {
+    color: #555555; /* Medium grey */
+    font-size: 1.2rem;
+    margin: 8px 0;
+    text-align: center;
+  }
+  
+  .course-study-page h5 {
+    color: #777777; /* Light grey */
+    font-size: 1rem;
+    margin: 6px 0;
+    text-align: center;
+    font-style: italic;
+  }
+  
+  .course-study-page a {
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2rem;
+    background: linear-gradient(45deg, #4caf50, #81c784); /* Green gradient */
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 128, 0, 0.2);
+    font-weight: 500;
+  }
+  
+  .course-study-page a:hover {
+    background: linear-gradient(45deg, #81c784, #4caf50); /* Reverse green gradient */
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(0, 128, 0, 0.3);
+  }
+  
+  @media (max-width: 768px) {
+    .course-study-page {
+      padding: 15px;
+      max-width: 90%;
+    }
+  
+    .course-study-page h2 {
+      font-size: 1.6rem;
+    }
+  
+    .course-study-page h4 {
+      font-size: 1rem;
+    }
+  
+    .course-study-page h5 {
+      font-size: 0.9rem;
+    }
+  
+    .course-study-page a {
+      font-size: 1rem;
+      padding: 8px 15px;
+    }
+  }
+  
+  /* Subtle fade-in animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .course-study-page {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  

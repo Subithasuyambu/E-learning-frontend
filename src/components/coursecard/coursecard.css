@@ -1,0 +1,82 @@
+
+.course-card {
+    background: #ffffff; /* Clean white background */
+    border: 1px solid #e0e0e0; /* Subtle border for structure */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Gentle shadow for depth */
+    border-radius: 12px; /* Smooth rounded corners */
+    text-align: center;
+    width: 300px; /* Slightly wider for better content alignment */
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
+    overflow: hidden;
+    position: relative;
+}
+
+.course-card:hover {
+    transform: translateY(-8px); /* Subtle lift on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Stronger shadow */
+}
+
+.course-image {
+    width: 100%;
+    height: 180px; /* Taller image for visual impact */
+    object-fit: cover; /* Ensures proper aspect ratio */
+    border-radius: 10px; /* Matches card's design */
+    margin-bottom: 15px;
+    transition: transform 0.3s ease-in-out; /* Smooth image zoom */
+}
+
+.course-card:hover .course-image {
+    transform: scale(1.03); /* Subtle zoom on hover */
+}
+
+.course-card h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333333;
+    margin-bottom: 10px;
+    text-transform: capitalize; /* Uniform title format */
+}
+
+.course-card p {
+    font-size: 14px;
+    color: #555555;
+    margin: 5px 0;
+    line-height: 1.6; /* Improves readability */
+}
+
+.common-btn {
+    background-color: #0078ff; /* Vibrant primary color */
+    color: #ffffff;
+    padding: 10px 25px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px; /* Fully rounded button */
+    cursor: pointer;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: background-color 0.3s, transform 0.2s; /* Interactive feedback */
+}
+
+.common-btn:hover {
+    background-color: #005fcc; /* Darker shade on hover */
+    transform: scale(1.05); /* Slight enlargement */
+}
+
+.course-card::before {
+    content: '';
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    width: 300px;
+    height: 300px;
+    background: rgba(0, 120, 255, 0.05); /* Light accent glow */
+    z-index: -1;
+    border-radius: 50%;
+    transition: transform 0.5s ease-in-out;
+    transform: scale(0);
+}
+
+.course-card:hover::before {
+    transform: scale(1); /* Glow effect appears on hover */
+}

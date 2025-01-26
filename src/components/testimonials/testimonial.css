@@ -1,0 +1,108 @@
+.testimonials {
+    padding: 80px 0;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 32px;
+    color: #8a4baf;
+    margin-bottom: 30px;
+  }
+  
+  .testmonials-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .testimonial-card {
+    background: rgba(255, 255, 255, 0.3); /* Semi-transparent white for glass effect */
+    background-image: linear-gradient(145deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.2)); /* Glossy shine */
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    padding: 20px;
+    border-radius: 15px;
+    width: 300px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    overflow: hidden; /* Ensure child elements don't spill out */
+    backdrop-filter: blur(5px); /* Optional: light blur for additional effect */
+    z-index: 1;
+  }
+  
+  /* Vibrant hover effect */
+  .testimonial-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Shaking animation */
+  @keyframes shake {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-10px);
+    }
+    50% {
+      transform: translateX(10px);
+    }
+    75% {
+      transform: translateX(-10px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  .testimonial-card:active {
+    animation: shake 0.5s ease-in-out;
+  }
+  
+  .testimonial-card:focus {
+    animation: shake 0.5s ease-in-out;
+  }
+  
+  /* Responsive behavior */
+  @media (max-width: 768px) {
+    .testimonial-card {
+      width: 80%;
+      text-align: center;
+    }
+  }
+  
+  .student-image img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .message {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .info {
+    text-align: center;
+  }
+  
+  .name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #8a4baf;
+    margin-bottom: 5px;
+  }
+  
+  .position {
+    font-size: 14px;
+    color: #666;
+  }
+  
